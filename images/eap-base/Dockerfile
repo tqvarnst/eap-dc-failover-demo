@@ -5,7 +5,7 @@
 #######################################################################
 
 # Use the centos base image
-FROM centos
+FROM centos:centos6
 MAINTAINER Thomas Qvarnstrom <tqvarnst@redhat.com>
 
 
@@ -46,8 +46,8 @@ ENV HOME /home/jboss
 ENV JAVA_OPTS -Xms256m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=$JBOSS_MODULES_SYSTEM_PKGS -Djava.awt.headless=true
 
 RUN mkdir -p $INSTALLDIR
-ADD software/jboss-eap-6.3.0.Beta.zip $INSTALLDIR/jboss-eap-6.3.0.Beta.zip
-RUN unzip -d $HOME $INSTALLDIR/jboss-eap-6.3.0.Beta.zip
+ADD software/jboss-eap-6.3.0.zip $INSTALLDIR/jboss-eap-6.3.0.zip
+RUN unzip -d $HOME $INSTALLDIR/jboss-eap-6.3.0.zip
 
 # Add a JBoss admin user
 RUN $JBOSS_HOME/bin/add-user.sh -g admin -u admin -p admin-123 -s
