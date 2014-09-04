@@ -22,7 +22,6 @@ Once you have build the continers you can now start the container. For that we h
         $ bin/start-all.sh
         
 ## Run the demo
-dsafaksdjfksadf
 
 
 ### Accessing the adminstration console for master dc
