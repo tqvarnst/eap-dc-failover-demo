@@ -2,7 +2,7 @@
 SCRIPT_DIR=`dirname $0`
 
 pushd $SCRIPT_DIR/../images
-swfile=jboss-eap-6.3.0.Beta.zip
+swfile=jboss-eap-6.3.0.zip
 if [ -f "eap-base/software/$swfile" ]
 then
 	echo "Building the JBoss EAP 6.3 containers"
