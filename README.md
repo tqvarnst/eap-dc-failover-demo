@@ -3,9 +3,9 @@ This repostiory contains the demonstration for doing failover between different 
 
 ## Prerequisites
 1. Install [Docker](https://www.docker.io/gettingstarted/#1)
-2. Download JBoss EAP 6.3 Beta from [jboss.org.](http://www.jboss.org/products/eap/download/)
+2. Download JBoss EAP 6.3 from [jboss.org.](http://www.jboss.org/products/eap/download/)
 2. Put the downloaded file: into images/eap-base/software
-        cp ~/Downloads/jboss-eap-6.3.0.Beta.zip images/eap/software/
+        cp ~/Downloads/jboss-eap-6.3.0.zip images/eap/software/
         
 _If you are on OS X then see How to use [Docker on OS X.](https://github.com/fabric8io/fabric8-docker/blob/master/DockerOnOSX.md)_
 	
